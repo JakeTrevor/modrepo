@@ -57,12 +57,11 @@ def extract_mod_info(filename):
         return base_name, ""
 
 # Specify the directory containing the jar files
-jar_directory = os.path.abspath('C:/Users/Jake/curseforge/minecraft/Instances/Botchpack 4 Test/mods')
+jar_directory = os.path.abspath('C:/Users/Jake/Downloads/newmods')
 # Specify the output directory
 output_directory = os.path.abspath('C:/Users/Jake/Desktop/modpack/mods')
 csv_filename = 'C:/Users/Jake/Desktop/modpack/mods_info.csv'
 
-os.mkdir(output_directory)
 
 # Call the function to create the zip files and extract mod info
 create_zip_with_mods_folder_and_extract_info(jar_directory, csv_filename, output_directory)
